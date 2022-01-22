@@ -244,18 +244,27 @@
             <div class="contact-form">
               <h2 class="mb-4">Interested to connect with me? Let's talk.</h2>
 
-              <form action="" method="get">
+              <form class="row g-3" action="https://formsubmit.co/ahmadtaquee786@gmail.com" method="POST">
+
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_next" value="https://haydn5.github.io/formsubmitdemo/success.html" >
+
                 <div class="row">
                   <div class="col-lg-6 col-12">
-                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
                   </div>
 
                   <div class="col-lg-6 col-12">
-                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                   </div>
 
                   <div class="col-12">
-                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="6" placeholder="Message" required></textarea>
                   </div>
 
                   <div class="ml-lg-auto col-lg-5 col-12">
